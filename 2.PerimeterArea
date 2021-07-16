@@ -1,0 +1,5 @@
+radius=gets.to_f
+perimeter=2*3.14*radius
+area=3.14*radius*radius
+puts "perimeter is #{perimeter}"
+puts "area is #{area}"
