@@ -1,0 +1,19 @@
+n1=gets.to_i
+n2=gets.to_i
+n3=gets.to_i
+m=n1
+if n1>n2 ? (n1>n3 ? m=n1 : m=n3) : (n2>n3 ? m=n2 : m=n3)
+end
+puts "#{m}"
+
+=begin
+
+  (INPUT)
+  3
+  7
+  5
+  
+  (OUTPUT)
+  7
+
+=end
