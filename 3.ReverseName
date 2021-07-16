@@ -1,0 +1,14 @@
+fname=gets.chomp
+lname=gets.chomp
+puts "#{lname} #{fname}"
+
+=begin
+
+  (INPUT)
+  vin
+  g
+  
+  (OUTPUT)
+  g vin
+
+=end
