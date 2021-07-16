@@ -1,0 +1,10 @@
+$s=<@ARGV>;
+print scalar reverse $s;
+
+=BEGIN {
+  (INPUT)
+  ABC
+  
+  (OUTPUT)
+  CBA
+}
