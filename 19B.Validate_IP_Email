@@ -1,0 +1,35 @@
+$email= <STDIN>;
+@username= split '@', $email;
+if(($username[1])=~/gmail.com/) 
+{ print "valid email\n"}
+else 
+{ print "email not valid\n"}
+    
+$ip = <STDIN>;
+  
+if($ip =~ /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})/)
+{
+    if($1 <= 255 && $2 <= 255 && $3 <= 255 && $4 <= 255)
+    {
+        print("IP address accepted\n");
+    }
+    else
+    {
+        print("IP address not accepted!\n");
+    }
+}
+else
+{
+    print("IP address not valid!\n");
+}
+
+
+=BEGIN {
+  (INPUT)
+  vineeth@gmail.com
+  172.126.139.141
+  
+  (OUTPUT)
+  valid email
+  IP address accepted
+}
