@@ -1,0 +1,28 @@
+$str="It is perl program\n";
+print $str;
+$str=~ s/perl/string/ig;
+print $str;
+
+#i specifies that the match should be case-insensitive. 
+#g says that we want to replace all occurrences of the specified string or regular expression, not just the first one.
+
+$string = q|
+We could replace all words in this text
+beginning with "w" with the word "CHANGED".
+|;
+
+$string =~ s/\bw\w*/CHANGED/ig;
+
+print $string;
+#q| ... | multi-line quote
+
+
+=BEGIN {
+  
+It is perl program
+It is string program
+
+CHANGED could replace all CHANGED in this text
+beginning CHANGED "CHANGED" CHANGED the CHANGED "CHANGED".
+  
+}
