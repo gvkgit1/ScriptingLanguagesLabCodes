@@ -1,0 +1,15 @@
+array=["ab",1,2,'c']
+for ele in array do
+  puts "#{ele}"
+end
+
+
+=begin
+
+  (OUTPUT)
+  ab
+  1
+  2
+  c
+
+=end
