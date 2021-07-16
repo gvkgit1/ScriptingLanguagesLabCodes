@@ -1,3 +1,0 @@
-str=gets.chomp
-n=gets.to_i
-puts "#{str*n}"
