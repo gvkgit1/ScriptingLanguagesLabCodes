@@ -1,0 +1,9 @@
+studentMarks=Hash.new
+studentMarks['A']=70
+studentMarks['B']=90
+totalMarks=0
+studentMarks.each{|key,value| totalMarks+=value} 
+puts "#{totalMarks}"
+
+
+# output 160
