@@ -1,0 +1,17 @@
+def decide(x,y)
+  return (x<0 && y>100) || (x>100 && y<0)
+end
+
+puts decide(-1,200)
+puts decide(1000,-33)
+puts decide(1000,33)
+
+
+=begin
+
+  (OUTPUT)
+  true
+  true
+  false
+
+=end
