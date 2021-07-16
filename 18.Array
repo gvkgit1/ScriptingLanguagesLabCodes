@@ -1,0 +1,25 @@
+@a=(1,2,3);
+print "Array : @a\n";
+
+push(@a,4,5);
+print "After push : @a\n";
+
+pop(@a);
+print "After pop : @a\n";
+
+shift(@a);
+print "After shift : @a\n";
+
+unshift(@a,-1,0);
+print "After unshift : @a\n";
+
+
+=BEGIN {
+  
+Array : 1 2 3
+After push : 1 2 3 4 5
+After pop : 1 2 3 4
+After shift : 2 3 4
+After unshift : -1 0 2 3 4
+  
+}
