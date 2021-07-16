@@ -1,0 +1,15 @@
+def decide(x,y)
+  return x==20||y==20||x+y
+end
+
+puts decide(10,20)
+puts decide(10,30)
+
+
+=begin
+
+  (OUTPUT)
+  true
+  40
+
+=end
