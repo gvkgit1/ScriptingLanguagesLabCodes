@@ -1,0 +1,7 @@
+proc newer { file1 file2 } {
+ if ![file exists $file2] {
+   return 1
+ } else {
+  puts "[file mtime $file1] > [file mtime $file2]"
+ }
+}
