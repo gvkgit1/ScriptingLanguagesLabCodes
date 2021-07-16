@@ -1,0 +1,19 @@
+file=gets.chomp
+fname=File.basename file
+bname=File.basename file,".rb"
+fext=File.extname file
+fpath=File.dirname file
+puts "File Name - #{fname} \nBase Name - #{bname} \nExtention - #{fext} \nFile Path - #{fpath} \n"
+
+=begin
+
+  (INPUT)
+ /user/sys/test.rb
+  
+  (OUTPUT)
+  File Name - test.rb 
+  Base Name - test 
+  Extention - .rb 
+  File Path - /user/sys
+
+=end
